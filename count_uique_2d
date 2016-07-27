@@ -5,7 +5,7 @@ function [T]=count_unique_2d(x1, x2)
 %   This function determines unique combined values of two arrays, and also counts the
 %   number of instances of those values. For example, count all possible combinations of cars' makers and years from a city's 10-year vehicle accident report.
 %   This is based on Anthony Kendall's count_unique.m. https://www.mathworks.com/matlabcentral/fileexchange/23333-determine-and-count-unique-values-of-an-array/content/count_unique.m
-%
+%   Now for string array only.
 %   Descriptions of Output Variables:
 %   uniques:    sorted unique values in 2D
 %   numUnique:  number of instances of each unique value in 2D
@@ -17,7 +17,6 @@ function [T]=count_unique_2d(x1, x2)
 % Author: Tao Xie
 % Contact: xietao2000[at] gmail [dot] com
 % Created: 2016-7-12
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 if nargin ~= 2
    error('Need two vectors as input');
