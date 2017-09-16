@@ -31,7 +31,7 @@ end
 clear d2
 for i=1:length(u1)
     for j=1:length(u2)
-        d2(i,j)=length(intersect(strmatch(u1{i},x1,'exact'),strmatch(u2{j},x2,'exact')));
+        d2(i,j)=length(intersect(find(strcomp(x1,u1{i})),find(strcmp(x2,u2{j})))));
     end
 end
 T = array2table(d2,'VariableNames',u2, 'RowNames', u1);
